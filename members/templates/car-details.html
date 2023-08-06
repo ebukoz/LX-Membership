@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mycar.name }}
+{% endblock %}
+
+{% block content %}
+  <div class="mycard">
+    <h1>{{ mycar.name }}</h1>
+    <p>Manufacturer {{ mycar.manufacturer }}</p>
+    <p>Year: {{ mycar.year }}</p>
+    <p>Mileage: {{ mycar.mileage }}</p>
+    
+  </div>
+  {% include 'nav.html' %} 
+{% endblock %}  
